@@ -1,0 +1,139 @@
+.dashboard{
+    padding-top: 81px;
+    min-height: 100vh;
+    background-color: #dae3e7;
+
+}
+
+.side-bar{
+    background-color: #3e4246;
+    min-height: 100%;
+    width: 300px;
+    position: fixed;
+    padding-block: 1.5em;
+
+
+    .side-bar-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        height: calc(100vh - 115px);
+
+
+        .side-nav{
+            list-style: none;
+            padding: 0;
+            
+
+            li{
+                padding-block: 1.2em;
+                padding-inline: 2em;
+                color: white;
+                cursor: pointer;
+                &:hover{
+                background-color: #cb2d3d98;
+
+                }
+                svg{
+                    margin-right:1em ;
+                }
+
+            
+
+            }
+            li.active{
+                
+                    background-color: #cb2d3c;
+    
+                
+            }
+        }
+    }
+    .closer{
+    padding-inline: 1em;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: right;
+
+
+    }
+}
+.side-bar.collapsed{
+    width: 72.36px;
+    .side-bar-content{
+        .side-nav{
+            li{
+                svg{
+                    margin: 0;
+                }
+                span{
+                    // display: none;
+                    position: absolute;
+                    transform: translateX(-400px);
+                }
+            }
+           
+        }
+    }
+    
+    
+}
+.no-style{
+    background: transparent;
+    border: none;
+
+
+    .bi.collapsed{
+        transform: rotate(180deg);
+    }
+}
+.dash .page-wrapper{
+    margin-left: 310px;
+    padding-top: 90px;
+}
+.page-wrapper.collapsed{
+    margin-left: 72.36px;
+}
+
+.link-dark{
+    margin-left: 20px;   
+}
+.activeClass{
+    background-color:#a42e3a ;
+}
+.dash-toolbar{
+    margin: 0;
+    width: 100%;
+}
+.dash{
+    padding: 0;
+}
+.navbar{
+    margin-left: 300px;
+}
+.navbar.close{
+    margin-left: 72px;
+}
+.nav > * + *{
+
+    margin-left:10px ;
+}
+
+.nav-link{
+    cursor: pointer;
+}
+
+nav{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.20);
+}
+
+.dropdown-item{
+    cursor: pointer;
+}
+.clear{
+    background: transparent;
+    border: none;
+}

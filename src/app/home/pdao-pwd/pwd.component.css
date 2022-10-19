@@ -1,0 +1,10 @@
+.container-fluid{
+    overflow-x: scroll; 
+}
+.table{
+    border: 1px solid black;
+}
+.main2{
+    display: flex;
+    justify-content: right;
+}

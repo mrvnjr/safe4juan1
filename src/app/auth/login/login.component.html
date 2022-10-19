@@ -1,0 +1,57 @@
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src="/assets/Care4JuanText.png"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <div class="form-screen">
+            <div class="bg-glass">
+              <div class="row justify-content-center">
+                <img src="/assets/768px-Seal_of_Santa_Rosa,_Laguna.png" alt="image" class="mb-4">
+                    <div class="card-header text-white">
+                      <div class="eason-card-title">Please sign in as</div>
+                      <div class="easion-card-menu">
+                        <div class="dropdown show">
+                          <form class="form"  [formGroup]="loginForm">
+                              <select formControlName="loginID" class="text-white form-select" >
+                                  <option selected value="1">PDAO</option>
+                                  <option value="2">OSCA</option>
+                                  <option value="3">CSWDO</option>
+                              </select>
+                          </form>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body background-color:white">
+                        <form class="form" >
+                            <div class="form-group">
+                                <input  type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                              <h1>{{ selectedBranch }}</h1>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Remember me</label>
+                                </div>
+                            </div>
+                            <div class="account-dialog-actions">
+                                <button type="submit" class="btn btn-primary" (click)="navigate()">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+    </div>
+ 
+</section>
+
